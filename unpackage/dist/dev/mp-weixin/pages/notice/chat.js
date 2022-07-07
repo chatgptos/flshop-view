@@ -883,7 +883,7 @@ var emotions = __webpack_require__(/*! @/static/json/emotions.json */ 73);var _d
     this.AUDIO.onEnded(function (res) {_this.playMsgid = null;}); //录音开始事件
     this.RECORDER.onStart(function (e) {_this.recordBegin(e);}); //录音结束事件
     this.RECORDER.onStop(function (e) {_this.recordEnd(e);}); // 监听服务消息
-    uni.$on('onChat', this.onSend);}, // 店铺按钮
+    uni.$on('onChat', this.onSend);}, // 展商按钮
   onNavigationBarButtonTap: function onNavigationBarButtonTap() {this.onShop(this.shop_id);}, // 监听返回
   onUnload: function onUnload() {this.$store.dispatch('chat/update', { type: 'del', id: this.to_id }); // 恢复全局监听
     this.$store.commit('chat/setIschat', { notice: true, number: 0 });}, onShow: function onShow() {this.scrollTop = 9999999;}, methods: { getMsgList: function getMsgList(id) {var _this2 = this; // 消息列表

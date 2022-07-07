@@ -1,6 +1,6 @@
 /**
  * flbooth 多用户电商系统核心配置项
- * @author 上海蜂雷网络科技有限公司 <flbooth@i36k.com>
+ * @author 上海蜂雷网络科技有限公司 <flbooth@fladmin.com>
  * < 本程序，未经版权所有权人书面许可，不能自行用于商业用途！>
  * 
  * @config socketUrl 即时通讯服务器地址，微信必须使用wss:// 如：wss://chat.flbooth.com

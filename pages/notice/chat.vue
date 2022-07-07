@@ -423,7 +423,7 @@ export default {
 		// 监听服务消息
 		uni.$on('onChat', this.onSend);
 	},
-	// 店铺按钮
+	// 展商按钮
 	onNavigationBarButtonTap() {
 		this.onShop(this.shop_id);
 	},

@@ -29,67 +29,7 @@
 		}
 	],
 	/* 分包 */
-	"subPackages": [
-		/* 文章页面 */
-		{
-			"root": "pages/article",
-			"pages": [{
-					"path": "list",
-					"style": {
-						"enablePullDownRefresh": true, //开启上拉
-						"navigationBarTitleText": "今日头条",
-						"app-plus": {
-							"titleNView": {
-								"type": "float",
-								"backgroundColor": "",
-								"blurEffect": "light"
-							}
-						},
-						"h5": {
-							"titleNView": {
-								"backgroundColor": "#f7f7f7"
-							}
-						}
-					}
-				},
-				{
-					"path": "details",
-					"style": {
-						"navigationBarTitleText": "详情",
-						"app-plus": {
-							"titleNView": {
-								"type": "float",
-								"backgroundColor": "",
-								"blurEffect": "light"
-							}
-						},
-						"h5": {
-							"titleNView": {
-								"backgroundColor": "#f7f7f7"
-							}
-						}
-					}
-				},
-				{
-					"path": "advert",
-					"style": {
-						"navigationBarTitleText": "加载中..",
-						"app-plus": {
-							"titleNView": {
-								"type": "float",
-								"backgroundColor": "",
-								"blurEffect": "light"
-							}
-						},
-						"h5": {
-							"titleNView": {
-								"backgroundColor": "#f7f7f7"
-							}
-						}
-					}
-				}
-			]
-		},
+	"subPackages": [ 
 		/* 消息中心 */
 		{
 			"root": "pages/notice",
@@ -403,7 +343,7 @@
 				{
 					"path": "service",
 					"style": {
-						"navigationBarTitleText": "智能小蜜"
+						"navigationBarTitleText": "商务洽谈"
 					}
 				},
 				{
@@ -1198,18 +1138,18 @@
 		// #endif
 
 		"list": [
-			 
+			 {
+			 	"pagePath": "pages/user",
+			 	"iconPath": "static/images/tabbar/user.png",
+			 	"selectedIconPath": "static/images/tabbar/userHL.png",
+			 	"text": "我的"
+			 }
+			 ,
 			{
 				"pagePath": "pages/article/list", //页面路径，必须在 pages 中先定义
 				"iconPath": "static/images/tabbar/index.png", //建议尺寸为 81px * 81px
 				"selectedIconPath": "static/images/tabbar/indexHL.png", //建议尺寸为 81px * 81px
 				"text": "消息中心" //菜单上按钮文字，在 5+APP 和 H5 平台为非必填。例如中间可放一个没有文字的+号图标
-			},
-			{
-				"pagePath": "pages/user",
-				"iconPath": "static/images/tabbar/user.png",
-				"selectedIconPath": "static/images/tabbar/userHL.png",
-				"text": "我的"
 			}
 		]
 	},

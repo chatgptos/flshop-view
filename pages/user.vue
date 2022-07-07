@@ -93,7 +93,7 @@
 		</view>
 		
 		<view class="wanl-user-order padding-sm margin-bj">
-			<view class="project text-sm wanl-gray-dark">
+			<!-- <view class="project text-sm wanl-gray-dark">
 				<view @tap="$flbooth.auth('/pages/user/order/order?state=1')">
 					<text class="wlIcon-31daifukuan wanl-pip"></text>
 					待支付
@@ -119,7 +119,7 @@
 					退货/售后
 					<view class="cu-tag badge bg-orange" v-if="statistics.order.customer > 0">{{ $flbooth.toFormat(statistics.order.customer, 'hundred') }}</view>
 				</view>
-			</view>
+			</view> -->
 			<!-- <view class="logistics margin-top-bj padding-sm" v-if="statistics.logistics.length > 0">
 				<swiper vertical autoplay circular disable-touch interval="4000" class="swiper">
 					<swiper-item @tap="$flbooth.auth('/pages/notice/logistics/details')">
@@ -144,18 +144,10 @@
 		 
 		
 		<view class="wanl-user-tool padding-top-bj margin-lr-bj">
-			<view class="list text-sm grid col-5 wanl-gray-dark"> 
-				<view @tap="$flbooth.auth('/pages/user/signin/signin')">
-					<text class="wlIcon-mianxing-rili wanl-orange"></text>
-					签到
-				</view> 
-				<view @tap="help">
-					<text class="wlIcon-bangzhu3 wanl-text-green"></text>
-					帮助中心
-				</view>
+			<view class="list text-sm grid col-5 wanl-gray-dark">  
 				<view @tap="$flbooth.auth('/pages/user/service')">
 					<text class="wlIcon-icon-service wanl-text-purple"></text>
-					智能小蜜
+					合作洽谈
 				</view> 
 				<view @tap="setting">
 					<text class="wlIcon-shezhi1 wanl-text-green"></text>

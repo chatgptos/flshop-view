@@ -150,27 +150,7 @@ var render = function() {
   var g5 = _vm.$flbooth.wanlsys()
   var g6 = _vm.$flbooth.oss(_vm.user.avatar, 62, 62, 2, "avatar")
   var g7 = _vm.$flbooth.toFormat(_vm.statistics.order.whole, "hundred")
-  var g8 =
-    _vm.statistics.order.pay > 0
-      ? _vm.$flbooth.toFormat(_vm.statistics.order.pay, "hundred")
-      : null
-  var g9 =
-    _vm.statistics.order.delive > 0
-      ? _vm.$flbooth.toFormat(_vm.statistics.order.delive, "hundred")
-      : null
-  var g10 =
-    _vm.statistics.order.receiving > 0
-      ? _vm.$flbooth.toFormat(_vm.statistics.order.receiving, "hundred")
-      : null
-  var g11 =
-    _vm.statistics.order.evaluate > 0
-      ? _vm.$flbooth.toFormat(_vm.statistics.order.evaluate, "hundred")
-      : null
-  var g12 =
-    _vm.statistics.order.customer > 0
-      ? _vm.$flbooth.toFormat(_vm.statistics.order.customer, "hundred")
-      : null
-  var g13 = _vm.$flbooth.appstc("/common/guess_you_like_it.png")
+  var g8 = _vm.$flbooth.appstc("/common/guess_you_like_it.png")
 
   if (!_vm._isMounted) {
     _vm.e0 = function($event) {
@@ -206,30 +186,6 @@ var render = function() {
     }
 
     _vm.e8 = function($event) {
-      return _vm.$flbooth.auth("/pages/user/order/order?state=1")
-    }
-
-    _vm.e9 = function($event) {
-      return _vm.$flbooth.auth("/pages/user/order/order?state=2")
-    }
-
-    _vm.e10 = function($event) {
-      return _vm.$flbooth.auth("/pages/user/order/order?state=3")
-    }
-
-    _vm.e11 = function($event) {
-      return _vm.$flbooth.auth("/pages/user/order/order?state=4")
-    }
-
-    _vm.e12 = function($event) {
-      return _vm.$flbooth.auth("/pages/user/refund/lists")
-    }
-
-    _vm.e13 = function($event) {
-      return _vm.$flbooth.auth("/pages/user/signin/signin")
-    }
-
-    _vm.e14 = function($event) {
       return _vm.$flbooth.auth("/pages/user/service")
     }
   }
@@ -246,12 +202,7 @@ var render = function() {
         g5: g5,
         g6: g6,
         g7: g7,
-        g8: g8,
-        g9: g9,
-        g10: g10,
-        g11: g11,
-        g12: g12,
-        g13: g13
+        g8: g8
       }
     }
   )
@@ -289,14 +240,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 15));
-
-
-
-
-
-
-
-
 
 
 
