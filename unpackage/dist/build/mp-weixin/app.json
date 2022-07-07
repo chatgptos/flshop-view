@@ -108,8 +108,7 @@
       }
     ]
   },
-  "preloadRule": {},
-  "sitemapLocation": "sitemap.json",
+  "preloadRule": {}, 
   "permission": {
     "scope.userLocation": {
       "desc": "演示定位能力"
